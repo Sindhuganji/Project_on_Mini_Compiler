@@ -1,82 +1,83 @@
-Mini Compiler Project (Custom Programming Language)
+# 🧠 Mini Compiler Project (Custom Programming Language)
 
-This project implements a Python-based mini compiler for a custom-designed programming language. It demonstrates core compiler design concepts including lexical analysis, parsing, semantic analysis, and interpretation. The compiler supports control flow, runtime user input, and Python-like string handling.
+A Python-based mini compiler that implements core compiler design concepts including **lexical analysis, parsing, semantic analysis, and interpretation**.  
+The project supports a custom programming language with control flow, runtime input, and Python-like string handling.
 
-⸻
+---
 
-FEATURES
+## 🚀 Features
 
-• Custom programming language
-• Interactive program input from user
-• Lexer, Parser, AST, Semantic Analyzer, Interpreter
-• Runtime user input using read
-• Conditional statements: if, else
-• Loops using while
-• Loop control statements: break, continue
-• Python-like string and integer concatenation
-• Semantic error detection before execution
+- Custom programming language
+- File-based and interactive program input
+- Lexer, Parser, AST, Semantic Analyzer, Interpreter
+- Runtime user input (`read`)
+- Conditional statements (`if`, `else`)
+- Loops (`while`)
+- Loop control (`break`, `continue`)
+- Python-like string + integer concatenation
+- Compile-time semantic error detection
 
-⸻
+---
 
-COMPILER PIPELINE
+## 🏗️ Compiler Pipeline
 
 Source Code
-→ Lexical Analysis (Lexer)
-→ Syntax Analysis (Parser & AST)
-→ Semantic Analysis
-→ Interpretation / Execution
+   ↓
+Lexical Analysis (Lexer)
+   ↓
+Syntax Analysis (Parser & AST)
+   ↓
+Semantic Analysis
+   ↓
+Interpreter (Execution)
 
 ⸻
 
-PROJECT STRUCTURE
+##📁 Project Structure
 
-mini_compiler
-lexer.py – Tokenizes source code
-parser.py – Parses tokens and builds AST
-ast_nodes.py – AST node definitions
-semantic.py – Semantic analysis and type checking
-interpreter.py – Executes the program
-main.py – Compiler driver
-program.txt – User program (auto-generated)
-README – Project documentation
+mini_compiler/
+├── lexer.py           # Tokenizes source code
+├── parser.py          # Parses tokens and builds AST
+├── ast_nodes.py       # AST node definitions
+├── semantic.py        # Semantic analysis and type checking
+├── interpreter.py    # Executes the program
+├── main.py            # Compiler driver
+├── program.txt        # User program (auto-generated)
+└── README.md          # Project documentation
 
-⸻
-
-HOW TO RUN
+##▶️ How to Run
 
 Requirements
-Python 3.11 or above
+	•	Python 3.11 or above
 
-Run the compiler
+Run the Compiler
 python main.py
 
+Enter Program Code (User Input)
+
 The user types the program directly in the terminal.
-After typing the program, finish input using:
-Mac/Linux – Ctrl + D
-Windows – Ctrl + Z then Enter
 
-⸻
-
-SAMPLE PROGRAM
-
+Example:
 read n
 i = 1
 
 while i <= n
-print “Value: “ + i
-i = i + 1
+    print "Value: " + i
+    i = i + 1
 end
+
+Finish input:
+	•	Mac/Linux: Ctrl + D
+	•	Windows: Ctrl + Z then Enter
 
 ⸻
 
-RUNTIME INPUT
-
+⌨️ Runtime Input
 Enter value for n: 4
 
 ⸻
 
-OUTPUT
-
+📤 Output
 Value: 1
 Value: 2
 Value: 3
@@ -84,53 +85,25 @@ Value: 4
 
 ⸻
 
-EXAMPLE PROGRAMS
-
-If-Else Example
-
-read age
-if age >= 18
-print “Adult”
-else
-print “Minor”
-end
-
-Break Example
-
-i = 1
-while i <= 10
-if i == 5
-break
-end
-print i
-i = i + 1
-end
+##🛡️ Semantic Checks
+	•	Variable used before assignment
+	•	Type mismatch in expressions
+	•	Invalid break or continue usage
+	•	Errors detected before execution
 
 ⸻
 
-SEMANTIC CHECKS
+##🎓 Academic & Interview Value
 
-• Variable used before assignment
-• Type mismatch in expressions
-• Invalid break or continue usage
-• Errors detected before execution
+This project demonstrates strong understanding of:
+	•	Compiler design fundamentals
+	•	Abstract Syntax Tree based execution
+	•	Semantic validation
+	•	Control-flow implementation
+	•	Separation of compile-time and runtime errors
 
-⸻
+Resume line example:
 
-ACADEMIC AND INTERVIEW VALUE
-
-This project demonstrates strong understanding of compiler design principles, including AST-based execution, semantic validation, control-flow implementation, and separation of compile-time and runtime errors.
-
-⸻
-
-AUTHOR
-
-Pushpa Sri Sindhu
-B.Tech – Computer Science
-SRM AP University
+Developed a custom programming language compiler in Python implementing lexical analysis, parsing, semantic analysis, and interpretation.
 
 ⸻
-
-LICENSE
-
-This project is created for educational and academic purposes only.
