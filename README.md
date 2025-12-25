@@ -19,5 +19,3 @@ The project supports a custom programming language with control flow, runtime in
 - Compile-time semantic error detection
 
 ---
-
-## 🏗️ Compiler Pipeline
