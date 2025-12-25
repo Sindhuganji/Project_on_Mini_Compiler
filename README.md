@@ -33,7 +33,7 @@ Interpreter (Execution)
 
 ⸻
 
-##📁 Project Structure
+## 📁 Project Structure
 
 mini_compiler/
 ├── lexer.py           # Tokenizes source code
@@ -45,7 +45,7 @@ mini_compiler/
 ├── program.txt        # User program (auto-generated)
 └── README.md          # Project documentation
 
-##▶️ How to Run
+## ▶️ How to Run
 
 Requirements
 	•	Python 3.11 or above
@@ -85,7 +85,7 @@ Value: 4
 
 ⸻
 
-##🛡️ Semantic Checks
+## 🛡️ Semantic Checks
 	•	Variable used before assignment
 	•	Type mismatch in expressions
 	•	Invalid break or continue usage
@@ -93,7 +93,7 @@ Value: 4
 
 ⸻
 
-##🎓 Academic & Interview Value
+## 🎓 Academic & Interview Value
 
 This project demonstrates strong understanding of:
 	•	Compiler design fundamentals
